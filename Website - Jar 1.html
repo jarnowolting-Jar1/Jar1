@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jar 1 · AI-advies &amp; implementatie voor het Nederlandse MKB</title>
+<meta name="description" content="Jar 1 helpt Nederlandse MKB-bedrijven (10–200 medewerkers) AI praktisch en verantwoord inzetten: van AI-scan en roadmap tot implementatie en doorlopende ontzorging. AVG-proof en klaar voor de EU AI Act. Plan een gratis kennismaking van 30 minuten.">
+<meta property="og:title" content="Jar 1 · AI-advies &amp; implementatie voor het Nederlandse MKB">
+<meta property="og:description" content="Van AI-twijfel naar AI die zich terugverdient. Praktisch, verantwoord, in gewoon Nederlands. Plan een gratis kennismaking.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="nl_NL">
+<meta name="theme-color" content="#f7f2e9">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..650;1,9..144,400..650&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Structured data voor zoekmachines en AI-assistenten (GEO) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Jar 1",
+  "description": "AI-adviesbureau voor het Nederlandse MKB. Jar 1 helpt bedrijven met 10 tot 200 medewerkers AI praktisch en verantwoord inzetten: AI-scan en roadmap, implementatie van bewezen AI-tools in bestaande processen, training van teams en doorlopende ontzorging inclusief EU AI Act-compliance.",
+  "founder": {
+    "@type": "Person",
+    "name": "Jarno Wolting",
+    "jobTitle": "Oprichter en AI-adviseur",
+    "email": "jarnowolting@gmail.com"
+  },
+  "email": "jarnowolting@gmail.com",
+  "areaServed": {"@type": "Country", "name": "Nederland"},
+  "knowsAbout": ["AI-implementatie MKB", "EU AI Act compliance", "AVG en AI", "AI-strategie", "AI-training werknemers", "AI-tools selectie"],
+  "slogan": "Van AI-hype naar AI-resultaat — praktisch, betaalbaar, zonder poespas",
+  "makesOffer": [
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AI-Scan & Roadmap", "description": "Analyse van alle bedrijfsprocessen op AI-kansen, met concrete roadmap, verwachte besparing per proces en EU AI Act-check. Doorlooptijd twee weken."}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AI-Implementatie", "description": "Selectie en inrichting van bewezen AI-tools in bestaande werkprocessen, inclusief training van het team en compliance-documentatie."}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AI-Ontzorging", "description": "Doorlopend AI-partnerschap: maandelijkse check-ins, proactieve signalering van relevante AI-ontwikkelingen en doorlopende EU AI Act-bewaking."}}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Wat kost een AI-traject bij Jar 1?", "acceptedAnswer": {"@type": "Answer", "text": "Dat hangt af van de omvang van je bedrijf en de scope. Je krijgt altijd een vaste prijs vooraf, zwart op wit. In een gratis kennismaking van 30 minuten hoor je wat realistisch is voor jouw situatie."}},
+    {"@type": "Question", "name": "Voor welke bedrijven werkt Jar 1?", "acceptedAnswer": {"@type": "Answer", "text": "Nederlandse MKB-bedrijven met ongeveer 10 tot 200 medewerkers, in alle branches. Technische kennis is niet nodig; alles wordt in gewoon Nederlands uitgelegd en het team wordt getraind tot het zelfstandig met de tools werkt."}},
+    {"@type": "Question", "name": "Moet mijn bedrijf voldoen aan de EU AI Act?", "acceptedAnswer": {"@type": "Answer", "text": "Vrijwel elk bedrijf dat AI gebruikt krijgt met de EU AI Act te maken. Sinds februari 2025 geldt al een verplichting tot AI-geletterdheid van medewerkers, en in augustus 2026 treedt de volgende fase in werking. Een AI Act-check is daarom standaard onderdeel van elke scan van Jar 1."}},
+    {"@type": "Question", "name": "Bouwt Jar 1 zelf software?", "acceptedAnswer": {"@type": "Answer", "text": "Nee, bewust niet. Jar 1 selecteert en implementeert bestaande, bewezen AI-tools die passen bij het bedrijf. Dat houdt het advies onafhankelijk: er wordt geen eigen product verkocht, alleen wat werkt."}},
+    {"@type": "Question", "name": "Wat als AI weinig oplevert voor mijn bedrijf?", "acceptedAnswer": {"@type": "Answer", "text": "Dan is dat de uitkomst en hoor je dat eerlijk. De kennismaking is gratis en vrijblijvend; als er geen duidelijke kansen liggen, krijg je dat gewoon te horen."}}
+  ]
+}
+</script>
+
+<style>
+  :root{
+    --bg:#f7f2e9; --bg2:#efe6d1; --card:#fcf9f1; --line:#e8e1d0; --line2:#d8cdb4;
+    --ink:#23201a; --body:#5a5444; --mut:#8c8470;
+    --acc:#b65419; --acc-d:#94400f;
+    --sand:#e7dcc2;
+    --dark:#1f1c16; --dark-t:#f1ece0; --dark-mut:#a59b85;
+    --serif:'Fraunces',Georgia,'Times New Roman',serif;
+    --sans:'Inter',-apple-system,'Segoe UI',Roboto,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.65;overflow-x:clip;-webkit-font-smoothing:antialiased}
+  ::selection{background:var(--ink);color:var(--bg)}
+  :focus-visible{outline:2px solid var(--acc);outline-offset:3px;border-radius:4px}
+  .container{max-width:1240px;margin:0 auto;padding-left:clamp(20px,4vw,48px);padding-right:clamp(20px,4vw,48px)}
+  .skip{position:absolute;left:-9999px;top:0;background:var(--ink);color:#fff;padding:10px 18px;z-index:300}
+  .skip:focus{left:12px;top:12px}
+  .grain{position:fixed;inset:0;z-index:120;pointer-events:none;opacity:.04;mix-blend-mode:multiply;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='280'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E")}
+
+  .pre{position:fixed;inset:0;z-index:200;background:var(--bg);display:none;align-items:center;justify-content:center}
+  .pre-brand{font-family:var(--serif);font-size:44px;font-weight:600;letter-spacing:-.01em}
+  .pre-brand i{font-style:italic}
+  .pre-line{width:130px;height:1.5px;background:var(--line);margin:20px auto 0;overflow:hidden}
+  .pre-line i{display:block;height:100%;width:100%;background:var(--ink);transform:scaleX(0);transform-origin:left}
+
+  #cur{position:fixed;top:-5px;left:-5px;width:10px;height:10px;border-radius:50%;background:var(--acc);z-index:150;pointer-events:none;opacity:0}
+  @media (pointer:coarse){#cur{display:none}}
+
+  /* ===== Header ===== */
+  header{position:fixed;top:0;left:0;right:0;z-index:80;transition:transform .45s cubic-bezier(.4,0,.2,1),background .3s,border-color .3s;border-bottom:1px solid transparent}
+  header.scrolled{background:rgba(247,242,233,.9);backdrop-filter:blur(10px);border-bottom-color:var(--line)}
+  header.weg{transform:translateY(-101%)}
+  .head-in{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px clamp(20px,4vw,48px);max-width:1240px;margin:0 auto}
+  .brand{font-family:var(--serif);font-weight:600;font-size:21px;color:var(--ink);text-decoration:none;letter-spacing:-.01em}
+  .brand i{font-style:italic}
+  nav.desk{display:flex;align-items:center;gap:32px}
+  nav.desk a.nl{font-size:13.5px;font-weight:500;color:var(--body);text-decoration:none;position:relative}
+  nav.desk a.nl::after{content:'';position:absolute;left:0;bottom:-5px;width:100%;height:1px;background:var(--ink);transform:scaleX(0);transform-origin:right;transition:transform .35s cubic-bezier(.65,0,.35,1)}
+  nav.desk a.nl:hover::after{transform:scaleX(1);transform-origin:left}
+  .pill{display:inline-flex;align-items:center;font-size:13px;font-weight:600;color:var(--bg);background:var(--ink);padding:11px 24px;border-radius:999px;text-decoration:none;transition:background .25s}
+  .pill:hover{background:#3c3528}
+  .burger{display:none;width:44px;height:44px;border:none;background:none;cursor:pointer;z-index:100;position:relative}
+  .burger span{position:absolute;left:10px;right:10px;height:1.5px;background:var(--ink);transition:transform .35s,top .35s}
+  .burger span:nth-child(1){top:18px}
+  .burger span:nth-child(2){top:26px}
+  .burger.open span:nth-child(1){top:22px;transform:rotate(45deg)}
+  .burger.open span:nth-child(2){top:22px;transform:rotate(-45deg)}
+  @media (max-width:860px){nav.desk{display:none}.burger{display:block}}
+
+  .mmenu{position:fixed;inset:0;z-index:90;background:var(--bg);display:none;flex-direction:column;padding:110px clamp(24px,6vw,40px) 44px}
+  .mmenu.open{display:flex}
+  .mmenu a.ml{font-family:var(--serif);font-size:32px;font-weight:500;color:var(--ink);text-decoration:none;padding:16px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:baseline}
+  .mmenu a.ml small{font-family:var(--sans);font-size:12px;color:var(--mut)}
+  .mmenu .m-cta{margin-top:auto;justify-content:center}
+  .mmenu .m-mail{margin-top:14px;font-size:13px;color:var(--mut);text-align:center}
+  .mmenu .m-mail a{color:var(--ink)}
+
+  /* ===== Knoppen ===== */
+  .btn{display:inline-flex;align-items:center;gap:12px;background:var(--ink);color:var(--bg);font-size:15.5px;font-weight:600;padding:17px 34px;border-radius:999px;text-decoration:none;transition:background .25s;will-change:transform;box-shadow:0 10px 30px rgba(35,32,26,.16)}
+  .btn:hover{background:#3c3528}
+  .btn .arr{display:inline-block;transition:transform .3s cubic-bezier(.65,0,.35,1)}
+  .btn:hover .arr{transform:translateX(5px);color:#e8b288}
+  .micro{font-size:13px;color:var(--mut);margin-top:18px}
+  .ghostlink{font-size:14.5px;font-weight:500;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line2);padding-bottom:3px;transition:border-color .25s,color .25s}
+  .ghostlink:hover{color:var(--acc);border-color:var(--acc)}
+
+  /* ===== Hero ===== */
+  .hero{position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden;padding:150px 0 110px}
+  #heroCanvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+  .hero-in{position:relative;z-index:2}
+  .kicker{display:inline-flex;align-items:center;gap:10px;font-size:11.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--mut);margin-bottom:36px}
+  .kicker b{width:6px;height:6px;border-radius:50%;background:var(--acc);animation:pulse 2.4s infinite}
+  @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(182,84,25,.3)}50%{box-shadow:0 0 0 6px rgba(182,84,25,0)}}
+  h1{font-family:var(--serif);font-weight:540;font-size:clamp(44px,7vw,100px);line-height:1.02;letter-spacing:-.024em}
+  h1 .line{display:block;overflow:hidden;padding:.05em 0 .1em;margin:-.05em 0 -.1em}
+  h1 .line:nth-child(2){margin-left:clamp(0px,4vw,72px)}
+  h1 .line:nth-child(3){margin-left:clamp(0px,8.5vw,150px)}
+  h1 .line-in{display:inline-block;will-change:transform}
+  h1 em{font-style:italic;font-weight:480}
+  .hl-roze::after{background:#f6cdda;height:.32em;bottom:.08em}
+  .hero-onder{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,5vw,80px);align-items:start;margin-top:clamp(34px,4.5vw,64px)}
+  .hero .sub{font-size:clamp(16px,1.55vw,19px);color:var(--body);max-width:30em;margin:6px 0 40px}
+  @media (max-width:980px){.hero-onder{grid-template-columns:1fr;margin-top:40px}}
+  .cta-rij{display:flex;align-items:center;gap:28px;flex-wrap:wrap}
+  .hint{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--mut);display:flex;flex-direction:column;align-items:center;gap:10px;z-index:2}
+  .hint i{width:1px;height:44px;background:var(--line2);overflow:hidden;position:relative;display:block}
+  .hint i::after{content:'';position:absolute;top:-55%;left:0;width:100%;height:55%;background:var(--ink);animation:drop 2s cubic-bezier(.65,0,.35,1) infinite}
+  @keyframes drop{to{top:115%}}
+  @media (max-width:640px){.hero{padding:124px 0 90px}.hint{display:none}}
+
+  /* ===== Leesvoortgang ===== */
+  #leesbalk{position:fixed;top:0;left:0;height:2px;background:var(--ink);width:0;z-index:85;pointer-events:none}
+
+  /* ===== AI-demopaneel ===== */
+  .demo-wrap{margin-top:clamp(-72px,-4vw,0px)}
+  @media (max-width:980px){.demo-wrap{margin-top:0}}
+  .demo{background:var(--card);border:1px solid var(--line);border-radius:20px;box-shadow:0 22px 60px rgba(90,70,40,.09);padding:24px 24px 22px;position:relative;z-index:1;transform:rotate(-1.2deg);transition:transform .45s cubic-bezier(.65,0,.35,1)}
+  .demo-wrap:hover .demo{transform:rotate(0deg)}
+  .demo-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}
+  .demo-label{font-size:10.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--mut)}
+  .demo-live{display:inline-flex;align-items:center;gap:7px;font-size:10.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}
+  .demo-live b{width:6px;height:6px;border-radius:50%;background:var(--acc);animation:pulse 2.4s infinite}
+  .demo-tabs{display:flex;gap:8px;margin-bottom:20px}
+  .demo-tab{flex:1;border:none;background:none;cursor:pointer;padding:0 0 9px;font-family:inherit;font-size:11.5px;font-weight:600;color:var(--mut);position:relative;text-align:left;letter-spacing:.02em}
+  .demo-tab::after{content:'';position:absolute;left:0;bottom:0;height:2px;width:100%;background:var(--line)}
+  .demo-tab i{position:absolute;left:0;bottom:0;height:2px;width:100%;background:var(--ink);transform:scaleX(0);transform-origin:left;display:block;z-index:1}
+  .demo-tab.actief{color:var(--ink)}
+  .demo-stage{position:relative;height:248px}
+  .scene{position:absolute;inset:0;opacity:0;visibility:hidden;transition:opacity .35s}
+  .scene.aan{opacity:1;visibility:visible}
+  .doc-titel{font-family:var(--serif);font-size:15px;font-weight:600;margin-bottom:12px}
+  .doc-rij{height:9px;border-radius:5px;background:var(--bg2);margin-bottom:9px;transform-origin:left}
+  .typed{font-size:12.5px;color:var(--body);min-height:56px;border-left:2px solid var(--line2);padding-left:12px;margin:12px 0 14px;line-height:1.55}
+  .badge{display:inline-flex;align-items:center;gap:8px;font-size:11.5px;font-weight:600;background:var(--sand);color:var(--ink);border-radius:999px;padding:6px 14px}
+  .f-rij{display:flex;justify-content:space-between;align-items:center;font-size:13px;padding:8px 0;border-bottom:1px dashed var(--line)}
+  .f-rij .fl{color:var(--mut)}
+  .f-rij .fw{font-weight:600;display:flex;align-items:center;gap:7px}
+  .f-rij .vink{font-weight:700}
+  .f-rij + .badge{margin-top:14px}
+  .bub{max-width:86%;font-size:12.5px;line-height:1.5;padding:10px 14px;border-radius:14px;margin-bottom:9px;width:fit-content}
+  .bub.vraag{background:var(--bg2);border-top-left-radius:4px}
+  .bub.antw{background:var(--ink);color:var(--bg);margin-left:auto;border-top-right-radius:4px}
+  .bub.dots{background:var(--bg2);display:inline-flex;gap:4px;align-items:center}
+  .bub.dots i{width:5px;height:5px;border-radius:50%;background:var(--mut);animation:blink 1s infinite}
+  .bub.dots i:nth-child(2){animation-delay:.2s}
+  .bub.dots i:nth-child(3){animation-delay:.4s}
+  @keyframes blink{0%,100%{opacity:.3}50%{opacity:1}}
+  .grafiek{display:flex;align-items:flex-end;gap:9px;height:118px;margin:10px 0 16px}
+  .staaf{flex:1;background:var(--bg2);border-radius:5px 5px 0 0;transform-origin:bottom;border:1px solid var(--line)}
+  .staaf.piek{background:var(--ink);border-color:var(--ink)}
+  .zoekveld{border:1px solid var(--line2);border-radius:12px;padding:11px 14px;font-size:12.5px;color:var(--ink);background:#fff;min-height:42px;display:flex;align-items:center}
+  .zoekveld .caret{width:1.5px;height:14px;background:var(--ink);margin-left:3px;animation:blink 1s infinite}
+  .brein-bron{font-size:11px;color:var(--mut);margin:12px 0 10px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+  .bchip{border:1px dashed var(--line2);border-radius:999px;padding:3px 11px;font-size:10.5px;color:var(--body);background:var(--bg2)}
+  .brein-antw{font-size:12.5px;color:var(--body);border-left:2px solid var(--line2);padding-left:12px;line-height:1.55;margin-bottom:12px}
+  @media (max-width:980px){.demo-wrap{justify-self:start}}
+  @media (max-width:400px){.demo-tab{font-size:10.5px}}
+
+  /* ===== Marquee (neutraal) ===== */
+  .marq{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0;overflow:hidden;background:var(--bg);position:relative;z-index:3}
+  .marq-in{display:flex;width:max-content;animation:marq 64s linear infinite}
+  .mi{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(17px,2.1vw,25px);color:var(--ink);white-space:nowrap;display:flex;align-items:center;padding-right:48px}
+  .mi::after{content:'✦';font-size:13px;color:var(--acc);margin-left:48px;font-style:normal}
+  .mi.tool{font-family:var(--sans);font-style:normal}
+  .mi.tool b{font-weight:600;font-size:clamp(10.5px,1.1vw,12.5px);letter-spacing:.12em;text-transform:uppercase;color:var(--body);border:1px solid var(--line2);border-radius:999px;padding:7px 16px;background:rgba(255,255,255,.55)}
+  @keyframes marq{to{transform:translateX(-50%)}}
+  @media (prefers-reduced-motion:reduce){.marq-in{animation:none}}
+
+  /* ===== Pastel-gradiënten & speelse accenten (conducting-stijl) ===== */
+  .pastel{background:
+    radial-gradient(at 18% 22%, rgba(244,193,214,.85) 0%, transparent 55%),
+    radial-gradient(at 78% 16%, rgba(184,212,240,.85) 0%, transparent 55%),
+    radial-gradient(at 72% 82%, rgba(246,217,143,.9) 0%, transparent 58%),
+    radial-gradient(at 22% 78%, rgba(240,185,144,.8) 0%, transparent 55%),
+    #f6ead9}
+  .demo-wrap{position:relative;justify-self:end;max-width:440px;width:100%}
+  .demo-glow{position:absolute;top:-30px;right:-34px;width:76%;height:80%;border-radius:30px;transform:rotate(5deg);z-index:0}
+  .zweefchip{position:absolute;background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px 16px;box-shadow:0 14px 34px rgba(90,70,40,.16);font-size:12.5px;font-weight:600;color:var(--ink);animation:zweef 5.5s ease-in-out infinite;white-space:nowrap}
+  .zweefchip b{color:var(--acc);font-weight:700}
+  @keyframes zweef{0%,100%{transform:translateY(0) rotate(var(--rot,-2deg))}50%{transform:translateY(-9px) rotate(var(--rot,-2deg))}}
+  @media (prefers-reduced-motion:reduce){.zweefchip,.slot-ster{animation:none;transform:rotate(var(--rot,-2deg))}}
+  .demo-chip{left:-16px;bottom:-20px;--rot:-2.5deg;z-index:2}
+  .demo-chip small{display:block;font-weight:500;color:var(--mut);font-size:11px;margin-top:1px}
+  .portret-wrap{position:relative}
+  .portret-chip{right:-12px;bottom:-16px;--rot:2.5deg;z-index:2}
+
+  /* ===== Sectie-koppen ===== */
+  section{position:relative}
+  .s-label{font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--mut);display:flex;align-items:center;gap:14px;margin-bottom:24px}
+  .s-label::before{content:'✦';font-size:11px;color:var(--acc);line-height:1}
+  .s-kop{font-family:var(--serif);font-weight:540;font-size:clamp(34px,5.2vw,66px);line-height:1.06;letter-spacing:-.02em;margin-bottom:18px}
+  .s-kop em{font-style:italic;font-weight:480}
+  .stik{display:inline-block;padding:.02em .22em .06em;border-radius:.2em;line-height:1.05;transform:rotate(-1.8deg)}
+  .stik-roze{background:#f6c9d9}
+  .stik-blauw{background:#c9def4}
+  .stik-geel{background:#f3dfa2}
+  h1 .stik{transform:rotate(-1.2deg);padding:0 .18em .05em}
+  .cirkel{position:absolute;border-radius:50%;pointer-events:none}
+  .cirkel.c-lijn{border:1.5px solid var(--line2);opacity:.6}
+  .cirkel.c-vul{background:radial-gradient(circle,rgba(184,212,240,.32),transparent 70%)}
+  .s-sub{font-size:15.5px;color:var(--body);max-width:38em}
+  .bron{font-size:12px;color:var(--mut)}
+  .bron a{color:var(--mut);text-decoration:underline;text-underline-offset:2px}
+  .bron a:hover{color:var(--acc)}
+
+  /* ===== Statsband (donker) ===== */
+  .statband{background:var(--dark);color:var(--dark-t);padding:110px 0}
+  .statband .s-label{color:var(--dark-mut)}
+  .statband .s-label::before{color:#e8b288}
+  .stat-rijen{margin-top:36px}
+  .stat{display:grid;grid-template-columns:minmax(220px,460px) 1fr;gap:clamp(20px,4vw,60px);align-items:center;padding:34px 0;border-top:1px solid rgba(241,236,224,.16)}
+  .stat:last-child{border-bottom:1px solid rgba(241,236,224,.16)}
+  .stat-nr{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(60px,10vw,150px);line-height:1;letter-spacing:-.03em;background:linear-gradient(95deg,#f4c1d6 0%,#b8d4f0 45%,#f6d98f 90%);-webkit-background-clip:text;background-clip:text;color:transparent;padding-bottom:.06em;text-align:right;justify-self:end;white-space:nowrap}
+  .stat p{font-size:14.5px;color:var(--dark-mut);max-width:30em;margin:0 0 10px}
+  .stat .bron{display:block}
+  .stat .bron a{color:#8d8470}
+  .stat .bron a:hover{color:#e8b288}
+  @media (max-width:760px){.stat{grid-template-columns:1fr;gap:10px;padding:28px 0}.stat-nr{text-align:left;justify-self:start}}
+
+  /* ===== Herkenning ===== */
+  .herken{padding:140px 0 130px}
+  .herken-grid{display:grid;grid-template-columns:minmax(280px,1fr) 1.4fr;gap:clamp(40px,6vw,90px);align-items:start}
+  .herken-links{position:sticky;top:130px}
+  .h-rij{display:flex;gap:26px;align-items:baseline;padding:24px 0;border-top:1px solid var(--line);transition:padding-left .35s cubic-bezier(.65,0,.35,1)}
+  .h-rij:last-of-type{border-bottom:1px solid var(--line)}
+  .h-rij:hover{padding-left:14px}
+  .h-rij .idx{font-family:var(--serif);font-style:italic;color:var(--mut);font-size:14px;flex-shrink:0;min-width:30px}
+  .h-rij p{font-size:clamp(16px,1.8vw,19px);line-height:1.55;color:var(--ink);font-weight:500}
+  .herken-slot{margin-top:56px;font-family:var(--serif);font-size:clamp(20px,2.5vw,27px);line-height:1.5;font-weight:480;max-width:26em}
+  .herken-slot .bron{display:block;margin-top:16px;font-family:var(--sans)}
+  .hl{position:relative}
+  .hl::after{content:'';position:absolute;left:-2px;right:-2px;bottom:2px;height:.4em;background:var(--sand);z-index:-1;transform:scaleX(0);transform-origin:left;transition:transform .9s cubic-bezier(.65,0,.35,1) .15s}
+  .hl.on::after{transform:scaleX(1)}
+  @media (max-width:860px){.herken-grid{grid-template-columns:1fr}.herken-links{position:static}}
+
+  /* ===== Diensten ===== */
+  .diensten{background:var(--bg2);padding:140px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .d-kopblok{max-width:620px;margin-bottom:72px}
+  .stapel{display:flex;flex-direction:column;gap:24px}
+  .skaart{position:sticky;background:var(--card);border:1px solid #ece5d4;border-radius:30px;box-shadow:0 24px 64px rgba(90,70,40,.085);overflow:hidden}
+  .skaart:nth-child(1){top:clamp(86px,11vh,110px);margin-right:clamp(0px,4.5vw,52px)}
+  .skaart:nth-child(2){top:calc(clamp(86px,11vh,110px) + 24px);margin-left:clamp(0px,4.5vw,52px)}
+  .skaart:nth-child(3){top:calc(clamp(86px,11vh,110px) + 48px);margin-right:clamp(0px,2vw,26px)}
+  .skaart::after{content:'';position:absolute;top:-60px;right:-60px;width:200px;height:200px;border-radius:50%;pointer-events:none}
+  .skaart:nth-child(1)::after{background:radial-gradient(circle,rgba(244,193,214,.4),transparent 65%)}
+  .skaart:nth-child(2)::after{background:radial-gradient(circle,rgba(184,212,240,.42),transparent 65%)}
+  .skaart:nth-child(3)::after{background:radial-gradient(circle,rgba(246,217,143,.45),transparent 65%)}
+  @media (max-width:700px){.skaart:nth-child(1),.skaart:nth-child(2),.skaart:nth-child(3){margin-left:0;margin-right:0}}
+  .skaart-in{display:grid;grid-template-columns:minmax(160px,.55fr) 1.45fr;gap:clamp(24px,4vw,60px);padding:clamp(30px,4.5vw,54px)}
+  .sk-tegel{width:clamp(74px,7.5vw,98px);aspect-ratio:1;border-radius:24px;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(30px,3.4vw,42px);color:#fff;text-shadow:0 2px 14px rgba(110,80,45,.25);box-shadow:0 14px 32px rgba(120,90,50,.2);transition:transform .4s cubic-bezier(.65,0,.35,1)}
+  .skaart:nth-child(1) .sk-tegel{background:linear-gradient(135deg,#efaec7,#a9c8ec 70%,#cfe0f4);transform:rotate(-4deg)}
+  .skaart:nth-child(2) .sk-tegel{background:linear-gradient(135deg,#a9c8ec,#ecd28e 75%,#f3e3b0);transform:rotate(3deg)}
+  .skaart:nth-child(3) .sk-tegel{background:linear-gradient(135deg,#f0b58a,#efaec7 70%,#f6d3e2);transform:rotate(-3deg)}
+  .skaart:hover .sk-tegel{transform:rotate(0deg) scale(1.04)}
+  .sk-label{display:inline-block;font-size:10.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--mut);margin-top:16px}
+  .skaart h3{font-family:var(--serif);font-weight:560;font-size:clamp(24px,2.8vw,32px);letter-spacing:-.014em;margin-bottom:14px}
+  .skaart .sk-p{font-size:15px;color:var(--body);max-width:36em}
+  .sk-lever{margin-top:20px;font-size:13.5px;color:var(--mut)}
+  .sk-lever strong{color:var(--ink);font-weight:600}
+  .sk-link{display:inline-block;margin-top:18px;font-size:14px;font-weight:600;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line2);padding-bottom:2px;transition:color .25s,border-color .25s}
+  .sk-link:hover{color:var(--acc);border-color:var(--acc)}
+  .prijsnoot{margin:60px 0 0;font-size:14.5px;color:var(--body);max-width:600px}
+  .prijsnoot strong{color:var(--ink)}
+  @media (max-width:700px){.skaart-in{grid-template-columns:1fr;gap:16px}.sk-nr{font-size:42px}}
+
+  /* ===== Hoe het werkt ===== */
+  .werk{padding:140px 0 130px}
+  .stappen{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(28px,4vw,56px);margin-top:64px}
+  .stap{position:relative;padding-top:28px}
+  .stap-rule{position:absolute;top:0;left:0;width:100%;height:1.5px;background:var(--line)}
+  .stap-rule i{position:absolute;inset:0;background:var(--ink);transform:scaleX(0);transform-origin:left;display:block}
+  .stap-nr{font-family:var(--serif);font-style:italic;font-size:62px;color:var(--ink);line-height:1;margin-bottom:18px;font-weight:480;position:relative;z-index:1;display:inline-block}
+  .stap-nr::before{content:'';position:absolute;left:-16px;top:-4px;width:48px;height:48px;border-radius:50%;z-index:-1}
+  .stap:nth-child(1) .stap-nr::before{background:rgba(244,193,214,.75)}
+  .stap:nth-child(2) .stap-nr::before{background:rgba(184,212,240,.75)}
+  .stap:nth-child(3) .stap-nr::before{background:rgba(246,217,143,.8)}
+  .stap:not(:last-child)::after{content:'→';font-family:var(--serif);font-style:italic;position:absolute;right:clamp(-44px,-2.5vw,-26px);top:56px;font-size:32px;color:var(--line2)}
+  @media (max-width:760px){.stap:not(:last-child)::after{display:none}}
+  .stap h3{font-family:var(--serif);font-size:21px;font-weight:600;margin-bottom:10px}
+  .stap p{font-size:14.5px;color:var(--body)}
+  .stap small{display:block;margin-top:14px;font-size:11.5px;color:var(--mut);letter-spacing:.08em;text-transform:uppercase;font-weight:600}
+  @media (max-width:760px){.stappen{grid-template-columns:1fr;gap:42px}}
+
+  /* ===== Waarom ===== */
+  .waarom{padding:0 0 140px}
+  .waarom-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,4.5vw,64px);margin-top:64px}
+  .w-item{border-top:1px solid var(--line);padding-top:26px}
+  .w-item .w-idx{font-family:var(--serif);font-style:italic;font-size:13.5px;color:var(--mut);display:block;margin-bottom:12px}
+  .w-item h3{font-family:var(--serif);font-size:24px;font-weight:600;margin-bottom:10px;letter-spacing:-.01em}
+  .w-item p{font-size:14.5px;color:var(--body);max-width:32em}
+  .w-item .bron{display:block;margin-top:10px}
+  @media (max-width:700px){.waarom-grid{grid-template-columns:1fr;gap:36px}}
+
+  /* ===== Over ===== */
+  .over{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:140px 0}
+  .over-grid{display:grid;grid-template-columns:minmax(260px,350px) 1fr;gap:clamp(40px,6vw,90px);align-items:center}
+  .portret{aspect-ratio:5/6;border-radius:22px;overflow:hidden;position:relative;border:1px solid var(--line2)}
+  .portret-in{position:absolute;inset:-8%;display:flex;align-items:center;justify-content:center;will-change:transform;background:
+    radial-gradient(at 20% 25%, rgba(244,193,214,.9) 0%, transparent 55%),
+    radial-gradient(at 80% 18%, rgba(184,212,240,.9) 0%, transparent 55%),
+    radial-gradient(at 70% 85%, rgba(246,217,143,.95) 0%, transparent 58%),
+    radial-gradient(at 18% 80%, rgba(240,185,144,.85) 0%, transparent 55%),
+    #f4e6d4}
+  .portret-in span{font-family:var(--serif);font-style:italic;font-size:clamp(58px,7vw,84px);color:rgba(255,255,255,.85);font-weight:500;text-shadow:0 2px 18px rgba(120,90,50,.18)}
+  .over-tekst p{font-size:16px;color:var(--body);margin-bottom:16px;max-width:34em}
+  .over-tekst p strong{color:var(--ink)}
+  .handtekening{font-family:var(--serif);font-style:italic;font-size:21px;color:var(--acc);margin-top:26px}
+  @media (max-width:700px){.over-grid{grid-template-columns:1fr}.portret{max-width:230px}}
+
+  /* ===== FAQ ===== */
+  .faq{padding:140px 0}
+  .faq-lijst{margin-top:56px;max-width:760px}
+  .faq-item{border-top:1px solid var(--line)}
+  .faq-item:last-child{border-bottom:1px solid var(--line)}
+  .faq-item summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:baseline;gap:24px;padding:26px 0;font-family:var(--serif);font-size:clamp(17.5px,2vw,21px);font-weight:560}
+  .faq-item summary::-webkit-details-marker{display:none}
+  .faq-item summary::after{content:'+';font-family:var(--serif);font-weight:400;font-size:24px;color:var(--mut);transition:transform .3s;flex-shrink:0;line-height:1}
+  .faq-item[open] summary::after{transform:rotate(45deg)}
+  .faq-item .fa{padding:0 0 26px;font-size:15px;color:var(--body);max-width:40em}
+
+  /* ===== Nieuwsbrief ===== */
+  .nieuwsbrief{padding:0 0 140px}
+  .nb-card{position:relative;border:1px solid #d8dfe9;border-radius:30px;padding:clamp(48px,6vw,80px) clamp(24px,5vw,64px);text-align:center;max-width:860px;margin:0 auto;overflow:hidden;background:
+    radial-gradient(at 14% 18%, rgba(184,212,240,.55) 0%, transparent 58%),
+    radial-gradient(at 86% 14%, rgba(201,222,244,.5) 0%, transparent 55%),
+    radial-gradient(at 82% 86%, rgba(244,193,214,.28) 0%, transparent 55%),
+    radial-gradient(at 16% 84%, rgba(246,217,143,.25) 0%, transparent 55%),
+    #f4f2ec}
+  .nb-card p{font-size:15px;color:var(--body);margin:16px auto 34px;max-width:34em}
+  .nb-form{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .nb-form input{font-size:15px;padding:15px 24px;border:1px solid var(--line2);border-radius:999px;background:#fff;color:var(--ink);min-width:min(300px,72vw);font-family:inherit}
+  .nb-form input:focus{outline:2px solid var(--ink);outline-offset:1px}
+  .nb-form button{font-size:14.5px;font-weight:600;color:var(--bg);background:var(--ink);border:none;padding:15px 32px;border-radius:999px;cursor:pointer;font-family:inherit;transition:background .25s}
+  .nb-form button:hover{background:#3c3528}
+  .nb-noot{font-size:12.5px;color:var(--mut);margin-top:16px}
+  .nb-ok{display:none;margin-top:16px;font-size:14.5px;font-weight:500;color:var(--acc)}
+  .nb-ok.aan{display:block}
+
+  /* ===== Slot-CTA ===== */
+  .slotcta{text-align:center;padding:60px 0 150px}
+  .slot-card{position:relative;border-radius:34px;border:1px solid #eadfc9;padding:clamp(56px,8vw,100px) clamp(24px,5vw,72px);overflow:hidden;background:
+    radial-gradient(at 12% 15%, rgba(244,193,214,.65) 0%, transparent 55%),
+    radial-gradient(at 88% 12%, rgba(184,212,240,.65) 0%, transparent 55%),
+    radial-gradient(at 82% 88%, rgba(246,217,143,.7) 0%, transparent 58%),
+    radial-gradient(at 12% 85%, rgba(240,185,144,.55) 0%, transparent 55%),
+    #f8efdf}
+  .slot-card .s-kop{font-size:clamp(32px,5vw,60px);max-width:14em;margin:0 auto 18px}
+  .slot-card p{font-size:15.5px;color:#5f5742;max-width:32em;margin:0 auto 40px}
+  .slot-card .micro{color:#766c54}
+  .slot-ster{position:absolute;font-family:var(--serif);color:rgba(35,32,26,.22);pointer-events:none;animation:zweef 6s ease-in-out infinite}
+  .slot-ster.s1{top:36px;left:9%;font-size:26px;--rot:14deg}
+  .slot-ster.s2{bottom:44px;right:10%;font-size:20px;--rot:-10deg;animation-delay:1.4s}
+  .slot-ster.s3{top:30%;right:6%;font-size:15px;--rot:6deg;animation-delay:2.6s}
+  @media (max-width:640px){.slotcta{padding:40px 0 100px}}
+
+  /* ===== Footer ===== */
+  footer{background:var(--dark);color:var(--dark-t);padding:90px 0 0;overflow:hidden}
+  .foot-grid{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap}
+  .foot-brand{font-family:var(--serif);font-size:25px;font-weight:600}
+  .foot-brand i{font-style:italic}
+  .foot-sub{font-size:13.5px;color:var(--dark-mut);margin-top:10px;max-width:25em;line-height:1.7}
+  .foot-kol{display:flex;gap:clamp(40px,6vw,90px)}
+  .foot-kol h4{font-size:10.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#7d745f;margin-bottom:16px}
+  .foot-kol a{display:block;font-size:14px;color:var(--dark-t);text-decoration:none;margin-bottom:10px}
+  .foot-kol a:hover{color:#e8b288}
+  .ghost{font-family:var(--serif);font-weight:600;font-style:italic;font-size:clamp(90px,20vw,290px);line-height:.85;color:rgba(241,236,224,.05);text-align:center;user-select:none;pointer-events:none;margin-top:50px;letter-spacing:-.03em;white-space:nowrap}
+  .copy{border-top:1px solid rgba(241,236,224,.1);margin-top:-30px;position:relative;padding:22px clamp(20px,4vw,48px);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12px;color:#7d745f;max-width:1240px;margin-left:auto;margin-right:auto}
+
+  .reveal-basis{opacity:1}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Direct naar inhoud</a>
+<div class="grain" aria-hidden="true"></div>
+<div id="cur" aria-hidden="true"></div>
+
+<div class="pre" id="pre" aria-hidden="true">
+  <div class="pre-in" style="text-align:center">
+    <div class="pre-brand" id="preBrand">Jar <i>1</i></div>
+    <div class="pre-line"><i id="preLine"></i></div>
+  </div>
+</div>
+
+<header id="hdr">
+  <div class="head-in">
+    <a class="brand" href="#top">Jar <i>1</i></a>
+    <nav class="desk" aria-label="Hoofdmenu">
+      <a class="nl" href="#diensten">Diensten</a>
+      <a class="nl" href="#werkwijze">Werkwijze</a>
+      <a class="nl" href="#over">Over Jarno</a>
+      <a class="nl" href="#faq">Vragen</a>
+      <a class="pill" href="https://cal.com/jarno-wolting-j259uo" target="_blank" rel="noopener">Plan een kennismaking</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menu openen" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+<div id="leesbalk" aria-hidden="true"></div>
+
+<div class="mmenu" id="mmenu" aria-hidden="true">
+  <a class="ml" href="#diensten"><span>Diensten</span><small>01</small></a>
+  <a class="ml" href="#werkwijze"><span>Werkwijze</span><small>02</small></a>
+  <a class="ml" href="#over"><span>Over Jarno</span><small>03</small></a>
+  <a class="ml" href="#faq"><span>Vragen</span><small>04</small></a>
+  <a class="btn m-cta" href="https://cal.com/jarno-wolting-j259uo" target="_blank" rel="noopener">Plan een gratis kennismaking <span class="arr">→</span></a>
+  <div class="m-mail"><a href="mailto:jarnowolting@gmail.com">jarnowolting@gmail.com</a></div>
+</div>
+
+<main id="main">
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <canvas id="heroCanvas" aria-hidden="true"></canvas>
+  <div class="container hero-in">
+    <p class="kicker" data-hero><b></b>AI-advies &amp; implementatie · Nederlands MKB</p>
+    <h1>
+      <span class="line"><span class="line-in">Iedereen praat over AI.</span></span>
+      <span class="line"><span class="line-in">Ik zorg dat het in jouw</span></span>
+      <span class="line"><span class="line-in">bedrijf <span class="stik stik-roze"><em>écht werkt.</em></span></span></span>
+    </h1>
+    <div class="hero-onder">
+      <div>
+        <p class="sub" data-hero>Jar 1 helpt MKB-bedrijven van AI-twijfel naar AI die zich terugverdient: een concreet plan, de juiste tools en een team dat ermee overweg kan. Verantwoord, volgens de AVG en de EU AI Act.</p>
+        <div class="cta-rij" data-hero>
+          <a class="btn magnet" href="https://cal.com/jarno-wolting-j259uo" target="_blank" rel="noopener">Plan een gratis kennismaking <span class="arr">→</span></a>
+          <a class="ghostlink" href="#werkwijze">eerst zien hoe het werkt</a>
+        </div>
+        <p class="micro" data-hero>30 minuten · online · vrijblijvend</p>
+      </div>
+
+      <div class="demo-wrap" data-hero>
+        <div class="demo-glow pastel" aria-hidden="true"></div>
+        <aside class="demo" aria-label="Voorbeelden van wat AI in een MKB-bedrijf doet">
+        <div class="demo-top">
+          <span class="demo-label">Wat AI doet</span>
+          <span class="demo-live"><b></b>voorbeeld</span>
+        </div>
+        <div class="demo-tabs">
+          <button class="demo-tab actief" data-scene="0" type="button">Offerte<i></i></button>
+          <button class="demo-tab" data-scene="1" type="button">AI-brein<i></i></button>
+          <button class="demo-tab" data-scene="2" type="button">Klantvraag<i></i></button>
+          <button class="demo-tab" data-scene="3" type="button">Inzicht<i></i></button>
+        </div>
+        <div class="demo-stage">
+          <div class="scene aan" id="sc0">
+            <div class="doc-titel">Offerte — Van Dijk Installatie B.V.</div>
+            <div class="doc-rij" style="width:92%"></div>
+            <div class="doc-rij" style="width:78%"></div>
+            <div class="doc-rij" style="width:85%"></div>
+            <p class="typed" id="typed0">Op basis van jullie aanvraag: 3 werkdagen, inclusief materiaal en 5 jaar garantie. Totaal: € 4.850,- excl. btw.</p>
+            <span class="badge">✓ Concept in 20 seconden — jij keurt goed</span>
+          </div>
+          <div class="scene" id="sc1">
+            <div class="doc-titel">Bedrijfsbrein — vraag het je eigen bedrijf</div>
+            <div class="zoekveld"><span id="typed1">Wat hebben we klant Jansen beloofd over de levertijd?</span><i class="caret" aria-hidden="true"></i></div>
+            <div class="brein-bron"><b>Gevonden in:</b> <span class="bchip">Offerte 2026-014</span> <span class="bchip">Mail 28 mei</span></div>
+            <p class="brein-antw">Levering binnen 10 werkdagen na akkoord — vastgelegd in de offerte en per mail bevestigd.</p>
+            <span class="badge">✓ Antwoord uit je eigen documenten, met bron</span>
+          </div>
+          <div class="scene" id="sc2">
+            <div class="doc-titel">Klantvraag, 21:48 uur</div>
+            <div class="bub vraag">Kunnen jullie volgende week dinsdag leveren?</div>
+            <div class="bub dots" aria-hidden="true"><i></i><i></i><i></i></div>
+            <div class="bub antw">Ja, dinsdag kan. Ik plan de levering tussen 9:00 en 12:00 — u krijgt vooraf een bevestiging per mail.</div>
+            <span class="badge">✓ Antwoord in jouw stijl, dag en nacht</span>
+          </div>
+          <div class="scene" id="sc3">
+            <div class="doc-titel">Omzet per week — piek herkend</div>
+            <div class="grafiek" aria-hidden="true">
+              <div class="staaf" style="height:38%"></div>
+              <div class="staaf" style="height:52%"></div>
+              <div class="staaf" style="height:44%"></div>
+              <div class="staaf piek" style="height:88%"></div>
+              <div class="staaf" style="height:64%"></div>
+              <div class="staaf" style="height:57%"></div>
+            </div>
+            <span class="badge">✓ Drukte voorspeld — planning vooraf rond</span>
+          </div>
+        </div>
+        </aside>
+        <div class="zweefchip demo-chip"><b>45%</b> van het MKB werkt al met AI<small>CBS, 2025 — bedrijven met 50–250 medewerkers</small></div>
+      </div>
+    </div>
+  </div>
+  <div class="hint" aria-hidden="true"><span>scroll</span><i></i></div>
+</section>
+
+<!-- ===== MARQUEE ===== -->
+<div class="marq" aria-hidden="true">
+  <div class="marq-in">
+    <div style="display:flex">
+      <span class="mi">Geen hype</span><span class="mi tool"><b>Claude · Anthropic</b></span><span class="mi">Wel resultaat</span><span class="mi tool"><b>Gemini · Google</b></span><span class="mi">Gewoon Nederlands</span><span class="mi tool"><b>ChatGPT · OpenAI</b></span><span class="mi">AVG-proof</span><span class="mi tool"><b>Clay</b></span><span class="mi">Klaar voor de EU AI Act</span><span class="mi tool"><b>Make</b></span><span class="mi">Mensen vóór tools</span><span class="mi tool"><b>n8n</b></span>
+    </div>
+    <div style="display:flex">
+      <span class="mi">Geen hype</span><span class="mi tool"><b>Claude · Anthropic</b></span><span class="mi">Wel resultaat</span><span class="mi tool"><b>Gemini · Google</b></span><span class="mi">Gewoon Nederlands</span><span class="mi tool"><b>ChatGPT · OpenAI</b></span><span class="mi">AVG-proof</span><span class="mi tool"><b>Clay</b></span><span class="mi">Klaar voor de EU AI Act</span><span class="mi tool"><b>Make</b></span><span class="mi">Mensen vóór tools</span><span class="mi tool"><b>n8n</b></span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== STATBAND: waarom nu, met bronnen ===== -->
+<section class="statband" aria-label="AI-adoptie in cijfers">
+  <div class="container">
+    <p class="s-label" style="justify-content:flex-start">Waarom nu — de cijfers</p>
+    <div class="stat-rijen">
+      <div class="stat" data-rvi>
+        <div>
+          <p>van de Nederlandse bedrijven met 50–250 medewerkers gebruikt inmiddels AI. In 2023 was dat nog 20%.</p>
+          <span class="bron">Bron: <a href="https://longreads.cbs.nl/nederland-in-cijfers-2025/hoeveel-bedrijven-gebruiken-ai/" target="_blank" rel="noopener">CBS, Nederland in cijfers (2025)</a></span>
+        </div>
+        <div class="stat-nr"><span class="cnt" data-tel="45" data-suffix="%">45%</span></div>
+      </div>
+      <div class="stat" data-rvi>
+        <div>
+          <p>zo vaak gebruiken grote bedrijven AI vergeleken met kleine. Wie wacht, vergroot die achterstand elke maand.</p>
+          <span class="bron">Bron: <a href="https://www.cbs.nl/nl-nl/nieuws/2025/44/bedrijven-die-ai-gebruiken-zijn-vaak-groter" target="_blank" rel="noopener">CBS (2025)</a></span>
+        </div>
+        <div class="stat-nr"><span class="cnt" data-tel="3" data-suffix="×">3×</span></div>
+      </div>
+      <div class="stat" data-rvi>
+        <div>
+          <p>treedt de volgende fase van de EU AI Act in werking. Boetes kunnen oplopen tot €15 mln of 3% van de jaaromzet.</p>
+          <span class="bron">Bron: <a href="https://ondernemersplein.overheid.nl/wetten-en-regels/ai-act/" target="_blank" rel="noopener">Ondernemersplein / Rijksoverheid</a></span>
+        </div>
+        <div class="stat-nr">aug '26</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HERKENNING ===== -->
+<section class="herken">
+  <span class="cirkel c-lijn" style="width:min(36vw,440px);aspect-ratio:1;top:60px;right:-130px" aria-hidden="true"></span>
+  <div class="container herken-grid">
+    <div class="herken-links" data-rv>
+      <p class="s-label">Herkenning</p>
+      <h2 class="s-kop">Herken je <span class="stik stik-roze"><em>dit?</em></span></h2>
+      <p class="s-sub">Uit gesprekken met directeuren en eigenaren komt steeds hetzelfde beeld:</p>
+    </div>
+    <div data-rvg>
+      <div class="h-rij" data-rvi><span class="idx">01</span><p>Je weet dat je er iets mee moet, maar niet waar je moet beginnen.</p></div>
+      <div class="h-rij" data-rvi><span class="idx">02</span><p>Je hebt geen tijd om het uit te zoeken — en niemand in je team die het oppakt.</p></div>
+      <div class="h-rij" data-rvi><span class="idx">03</span><p>Je vraagt je af of je straks wel aan de EU AI Act en de AVG voldoet.</p></div>
+      <div class="h-rij" data-rvi><span class="idx">04</span><p>Je team kijkt de kat uit de boom, of is bang vervangen te worden.</p></div>
+      <div class="h-rij" data-rvi><span class="idx">05</span><p>Je wilt geen geld verbranden aan tools die na drie maanden ongebruikt zijn.</p></div>
+      <p class="herken-slot" data-rvi>Logisch allemaal. Maar wachten wordt stilaan duurder dan beginnen — de helft van je middelgrote concurrenten <span class="hl">werkt al met AI</span>. Jar 1 zorgt dat je aanhaakt, op een manier die bij jouw bedrijf past.
+      <span class="bron">Bron: <a href="https://longreads.cbs.nl/nederland-in-cijfers-2025/hoeveel-bedrijven-gebruiken-ai/" target="_blank" rel="noopener">CBS, 2025</a> — 45% AI-gebruik bij bedrijven met 50–250 medewerkers</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DIENSTEN ===== -->
+<section class="diensten" id="diensten">
+  <div class="container">
+    <div class="d-kopblok" data-rv>
+      <p class="s-label">Diensten</p>
+      <h2 class="s-kop">Drie diensten, <em>één doel:</em> AI die zich terugverdient</h2>
+      <p class="s-sub">Geen losse experimenten, maar een route — van eerste inzicht tot een bedrijf waar AI gewoon onderdeel is van het werk.</p>
+    </div>
+    <div class="stapel">
+      <article class="skaart">
+        <div class="skaart-in">
+          <div><div class="sk-tegel">01</div><span class="sk-label">De basis · 2 weken</span></div>
+          <div>
+            <h3>AI-Scan &amp; Roadmap</h3>
+            <p class="sk-p">Ik loop al je bedrijfsprocessen langs en breng in kaart waar AI tijd en geld oplevert — per proces, met verwachte besparing in uren en euro's. Geen algemeen verhaal, maar een plan waarmee je morgen kunt beginnen. Inclusief EU AI Act-check.</p>
+            <p class="sk-lever"><strong>Je krijgt:</strong> AI-roadmap op maat · prioriteiten met verwachte opbrengst · presentatie aan je MT</p>
+            <a class="sk-link" href="https://cal.com/jarno-wolting-j259uo" target="_blank" rel="noopener">Bespreek dit in de kennismaking →</a>
+          </div>
+        </div>
+      </article>
+      <article class="skaart">
+        <div class="skaart-in">
+          <div><div class="sk-tegel">02</div><span class="sk-label">De uitvoering · 6 weken</span></div>
+          <div>
+            <h3>AI-Implementatie</h3>
+            <p class="sk-p">Ik selecteer en richt de tools in die bij jullie passen — bewezen oplossingen, ingebed in je bestaande processen. Je team leert ermee werken in praktische sessies zonder jargon, tot het zelfstandig draait.</p>
+            <p class="sk-lever"><strong>Je krijgt:</strong> werkende AI-toepassingen · getraind team · compliance-documentatie · 3 maanden support</p>
+            <a class="sk-link" href="https://cal.com/jarno-wolting-j259uo" target="_blank" rel="noopener">Bespreek dit in de kennismaking →</a>
+          </div>
+        </div>
+      </article>
+      <article class="skaart">
+        <div class="skaart-in">
+          <div><div class="sk-tegel">03</div><span class="sk-label">Doorlopend · per maand opzegbaar</span></div>
+          <div>
+            <h3>AI-Ontzorging</h3>
+            <p class="sk-p">AI verandert maandelijks; jij hoeft het niet bij te houden. Ik volg de ontwikkelingen, signaleer wat relevant is voor jouw bedrijf en bewaak je AVG- en AI Act-compliance — terwijl jij onderneemt.</p>
+            <p class="sk-lever"><strong>Je krijgt:</strong> maandelijkse check-in + rapportage · proactief advies · doorlopende compliance-bewaking · direct bereikbaar</p>
+            <a class="sk-link" href="https://cal.com/jarno-wolting-j259uo" target="_blank" rel="noopener">Bespreek dit in de kennismaking →</a>
+          </div>
+        </div>
+      </article>
+    </div>
+    <p class="prijsnoot" data-rv>Wat het kost, hangt af van je bedrijf en de scope. Je krijgt altijd <strong>een vaste prijs vooraf</strong> — zwart op wit, geen verrassingen. In de kennismaking hoor je binnen 30 minuten wat realistisch is.</p>
+  </div>
+</section>
+
+<!-- ===== HOE HET WERKT ===== -->
+<section class="werk" id="werkwijze">
+  <span class="cirkel c-vul" style="width:340px;aspect-ratio:1;left:-120px;bottom:-40px" aria-hidden="true"></span>
+  <span class="cirkel c-lijn" style="width:180px;aspect-ratio:1;right:6%;top:80px" aria-hidden="true"></span>
+  <div class="container">
+    <div data-rv>
+      <p class="s-label">Werkwijze</p>
+      <h2 class="s-kop">Zo <span class="stik stik-blauw"><em>simpel</em></span> is het</h2>
+      <p class="s-sub">Geen maandenlange trajecten voordat je iets ziet.</p>
+    </div>
+    <div class="stappen" data-rvg>
+      <div class="stap" data-rvi>
+        <div class="stap-rule"><i></i></div>
+        <div class="stap-nr">1</div>
+        <h3>Kennismaking</h3>
+        <p>We bespreken in 30 minuten je bedrijf en waar je staat met AI. Jij vertelt, ik denk mee. Je weet daarna meteen of er iets te halen valt.</p>
+        <small>Gratis · online · vrijblijvend</small>
+      </div>
+      <div class="stap" data-rvi>
+        <div class="stap-rule"><i></i></div>
+        <div class="stap-nr">2</div>
+        <h3>Scan &amp; plan</h3>
+        <p>Ik breng je processen in kaart en lever een concreet plan: waar AI tijd en geld oplevert, met welke tools, in welke volgorde.</p>
+        <small>Twee weken · vaste prijs</small>
+      </div>
+      <div class="stap" data-rvi>
+        <div class="stap-rule"><i></i></div>
+        <div class="stap-nr">3</div>
+        <h3>Resultaat</h3>
+        <p>We voeren het plan uit. Je team wordt getraind en de tools draaien in het dagelijkse werk. Daarna houd ik het voor je bij — als je dat wilt.</p>
+        <small>Vanaf week drie</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WAAROM ===== -->
+<section class="waarom" id="waarom">
+  <div class="container">
+    <div data-rv>
+      <p class="s-label">Waarom Jar 1</p>
+      <h2 class="s-kop">Genoeg partijen doen <span class="stik stik-geel"><em>"iets met AI"</em></span></h2>
+      <p class="s-sub">Dit is waar ik anders in ben:</p>
+    </div>
+    <div class="waarom-grid" data-rvg>
+      <div class="w-item" data-rvi>
+        <span class="w-idx">(01)</span>
+        <h3>Praktisch, in euro's</h3>
+        <p>Geen rapport voor in de la. Elk advies heeft een verwachte opbrengst in uren of euro's — liever "zes uur minder offertes typen per week" dan "verhoogde efficiëntie".</p>
+      </div>
+      <div class="w-item" data-rvi>
+        <span class="w-idx">(02)</span>
+        <h3>Training die beklijft</h3>
+        <p>Tools kopen is makkelijk; ermee werken is het echte werk. Zonder goede inrichting en training verdampt bijna 40% van de tijdwinst aan het corrigeren van matige AI-output. Daarom train ik je team tot het zelfstandig draait.</p>
+        <span class="bron">Bron: <a href="https://www.allesoverhr.nl/nieuws/bijna-40-van-de-tijdsbesparing-door-ai-gaat-verloren-door-het-corrigeren-van-output-van-lage-kwaliteit/" target="_blank" rel="noopener">Workday-onderzoek (2026)</a></span>
+      </div>
+      <div class="w-item" data-rvi>
+        <span class="w-idx">(03)</span>
+        <h3>Verantwoord, aantoonbaar</h3>
+        <p>AVG en EU AI Act zijn standaard onderdeel van elk advies, geen bijzaak. AI-geletterdheid van je medewerkers is bovendien al sinds februari 2025 verplicht — ook dat regelen we.</p>
+        <span class="bron">Bron: <a href="https://ondernemersplein.overheid.nl/wetten-en-regels/ai-act/" target="_blank" rel="noopener">Rijksoverheid, AI Act</a></span>
+      </div>
+      <div class="w-item" data-rvi>
+        <span class="w-idx">(04)</span>
+        <h3>Eerlijk en onafhankelijk</h3>
+        <p>Ik bouw en verkoop geen eigen software, dus ik adviseer alleen wat werkt. En ik vertel je ook wat AI níét kan: levert iets te weinig op, dan hoor je dat van mij.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== OVER JARNO ===== -->
+<section class="over" id="over">
+  <div class="container over-grid">
+    <!-- FOTO: vervang het blok hieronder door <img src="jouw-foto.jpg" alt="Jarno Wolting, oprichter van Jar 1" style="width:100%;height:100%;object-fit:cover"> binnen .portret zodra je een foto hebt -->
+    <div class="portret-wrap" data-rv>
+      <div class="portret"><div class="portret-in" id="portretIn"><span>JW</span></div></div>
+      <div class="zweefchip portret-chip">✦ Oprichter van Jar 1</div>
+    </div>
+    <div class="over-tekst" data-rv>
+      <p class="s-label">Over Jarno</p>
+      <h2 class="s-kop" style="font-size:clamp(27px,3.4vw,40px)">Wie er aan de andere kant <em>van de tafel</em> zit</h2>
+      <p style="margin-top:22px"><strong>Ik ben Jarno Wolting, oprichter van Jar 1.</strong> Ik help MKB-bedrijven fulltime met de praktische inzet van AI, en studeer en werk daarnaast in precies deze richting. Zo weet ik wat vandaag wérkt — niet wat vorig jaar hip was.</p>
+      <p>Jar 1 is bewust klein. Je krijgt geen accountmanager en geen juniorteam, maar één aanspreekpunt dat jouw bedrijf echt leert kennen. Ik bouw niets zelf dat al goed bestaat: ik kies bewezen tools en zorg dat ze in jouw processen werken.</p>
+      <p>Eerlijk over wat AI kan. Net zo eerlijk over wat het niet kan.</p>
+      <div class="handtekening">— Jarno</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div data-rv>
+      <p class="s-label">Veelgestelde vragen</p>
+      <h2 class="s-kop">Wat directeuren <em>meestal willen weten</em></h2>
+    </div>
+    <div class="faq-lijst" data-rvg>
+      <details class="faq-item" data-rvi>
+        <summary>Wat kost een AI-traject bij Jar 1?</summary>
+        <div class="fa">Dat hangt af van de omvang van je bedrijf en de scope. Je krijgt altijd een vaste prijs vooraf, zwart op wit. In een gratis kennismaking van 30 minuten hoor je wat realistisch is voor jouw situatie.</div>
+      </details>
+      <details class="faq-item" data-rvi>
+        <summary>Voor welke bedrijven werkt Jar 1?</summary>
+        <div class="fa">Nederlandse MKB-bedrijven met ongeveer 10 tot 200 medewerkers, in alle branches. Technische kennis is niet nodig: alles wordt in gewoon Nederlands uitgelegd en je team wordt getraind tot het zelfstandig met de tools werkt.</div>
+      </details>
+      <details class="faq-item" data-rvi>
+        <summary>Moet mijn bedrijf voldoen aan de EU AI Act?</summary>
+        <div class="fa">Vrijwel elk bedrijf dat AI gebruikt krijgt ermee te maken. Sinds februari 2025 geldt al een verplichting tot AI-geletterdheid van medewerkers, en in augustus 2026 treedt de volgende fase in werking. Daarom is een AI Act-check standaard onderdeel van elke scan.</div>
+      </details>
+      <details class="faq-item" data-rvi>
+        <summary>Bouwt Jar 1 zelf software?</summary>
+        <div class="fa">Nee, bewust niet. Ik selecteer en implementeer bestaande, bewezen AI-tools die passen bij jouw bedrijf. Dat houdt mijn advies onafhankelijk: ik verkoop geen eigen product, alleen wat werkt.</div>
+      </details>
+      <details class="faq-item" data-rvi>
+        <summary>Wat als AI weinig oplevert voor mijn bedrijf?</summary>
+        <div class="fa">Dan is dat de uitkomst, en hoor je dat eerlijk. De kennismaking is gratis en vrijblijvend — als er geen duidelijke kansen liggen, krijg je dat gewoon te horen.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NIEUWSBRIEF ===== -->
+<section class="nieuwsbrief">
+  <div class="container">
+    <div class="nb-card" data-rv>
+      <p class="s-label" style="justify-content:center">Nieuwsbrief</p>
+      <h2 class="s-kop" style="font-size:clamp(26px,3.4vw,38px)">Liever eerst <span class="stik stik-blauw"><em>even kijken?</em></span></h2>
+      <p>Prima. In mijn nieuwsbrief lees je elke paar weken wat AI het MKB nú oplevert: concrete toepassingen, tools die hun geld waard zijn, en wat de regels voor jou betekenen. Gewoon Nederlands, geen hype.</p>
+      <!-- NIEUWSBRIEF: dit formulier opent nu een e-mail naar jou. Zodra je een nieuwsbriefdienst hebt
+           (bijv. MailerLite, Brevo of Buttondown), zet je hun form-action hier en verwijder je het mailto-script onderaan. -->
+      <form class="nb-form" id="nbForm">
+        <input type="email" id="nbEmail" placeholder="jouw@bedrijf.nl" required aria-label="E-mailadres">
+        <button type="submit">Aanmelden</button>
+      </form>
+      <p class="nb-noot">Geen spam, uitschrijven kan altijd. Je gegevens blijven bij mij.</p>
+      <p class="nb-ok" id="nbOk">Bijna klaar — je mailprogramma is geopend. Verstuur het bericht en je staat op de lijst.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SLOT-CTA ===== -->
+<section class="slotcta">
+  <div class="container">
+    <div class="slot-card" data-rv>
+      <span class="slot-ster s1" aria-hidden="true">✦</span>
+      <span class="slot-ster s2" aria-hidden="true">✦</span>
+      <span class="slot-ster s3" aria-hidden="true">✦</span>
+      <h2 class="s-kop">Weten wat AI <span class="stik stik-blauw"><em>jouw bedrijf</em></span> oplevert?</h2>
+      <p>Plan een gratis kennismaking van 30 minuten. Daarna weet je waar je staat — ook als je zelf verder wilt.</p>
+      <a class="btn magnet" href="https://cal.com/jarno-wolting-j259uo" target="_blank" rel="noopener">Plan een gratis kennismaking <span class="arr">→</span></a>
+      <p class="micro">30 minuten · online · vrijblijvend</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container foot-grid">
+    <div>
+      <div class="foot-brand">Jar <i>1</i></div>
+      <p class="foot-sub">AI-advies &amp; implementatie voor het Nederlandse MKB. Praktisch, verantwoord, in gewoon Nederlands.</p>
+    </div>
+    <div class="foot-kol">
+      <div>
+        <h4>Contact</h4>
+        <a href="mailto:jarnowolting@gmail.com">jarnowolting@gmail.com</a>
+        <a href="https://cal.com/jarno-wolting-j259uo" target="_blank" rel="noopener">Plan een kennismaking</a>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <a href="#diensten">Diensten</a>
+        <a href="#werkwijze">Werkwijze</a>
+        <a href="#faq">Veelgestelde vragen</a>
+      </div>
+      <div>
+        <h4>Pagina's</h4>
+        <a href="diensten.html">Alle diensten</a>
+        <a href="over.html">Over Jar 1</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </div>
+  </div>
+  <div class="ghost" aria-hidden="true">Jar 1</div>
+  <!-- Later aanvullen: KvK-nummer en (zodra je die hebt) je domein-e-mailadres -->
+  <div class="copy"><span>© 2026 Jar 1 · Alle rechten voorbehouden</span><span>Van AI-hype naar AI-resultaat</span></div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+<script>
+(function(){
+  'use strict';
+  var RM = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var FINE = window.matchMedia('(pointer: fine)').matches;
+  var G = (typeof window.gsap !== 'undefined');
+  if (G && typeof window.ScrollTrigger !== 'undefined') gsap.registerPlugin(ScrollTrigger);
+
+  /* ===== Lenis smooth-scroll (boterzacht scrollen; valt terug op native) ===== */
+  var lenis = null;
+  if (typeof window.Lenis !== 'undefined' && G && !RM){
+    lenis = new Lenis({duration:1.05});
+    lenis.on('scroll', function(){ if (typeof ScrollTrigger !== 'undefined') ScrollTrigger.update(); });
+    gsap.ticker.add(function(t){ lenis.raf(t*1000); });
+    gsap.ticker.lagSmoothing(0);
+    document.querySelectorAll('a[href^="#"]').forEach(function(a){
+      a.addEventListener('click', function(e){
+        var id = a.getAttribute('href');
+        if (id.length > 1){
+          var doel = document.querySelector(id);
+          if (doel){ e.preventDefault(); lenis.scrollTo(doel, {offset:-72}); }
+        }
+      });
+    });
+  }
+
+  var hdr = document.getElementById('hdr'), balk = document.getElementById('leesbalk'), lastY = 0, ticking = false;
+  function onScroll(){
+    var y = window.scrollY;
+    hdr.classList.toggle('scrolled', y > 24);
+    if (y > 140 && y > lastY + 4) hdr.classList.add('weg');
+    else if (y < lastY - 4 || y < 140) hdr.classList.remove('weg');
+    if (balk){
+      var max = document.documentElement.scrollHeight - window.innerHeight;
+      balk.style.width = (max > 0 ? (y / max) * 100 : 0) + '%';
+    }
+    lastY = y; ticking = false;
+  }
+  window.addEventListener('scroll', function(){ if(!ticking){ requestAnimationFrame(onScroll); ticking = true; } }, {passive:true});
+  onScroll();
+
+  var burger = document.getElementById('burger'), mmenu = document.getElementById('mmenu');
+  function sluitMenu(){ burger.classList.remove('open'); mmenu.classList.remove('open'); mmenu.setAttribute('aria-hidden','true'); burger.setAttribute('aria-expanded','false'); document.body.style.overflow=''; if (lenis) lenis.start(); }
+  burger.addEventListener('click', function(){
+    var open = !mmenu.classList.contains('open');
+    if (open){ burger.classList.add('open'); mmenu.classList.add('open'); mmenu.setAttribute('aria-hidden','false'); burger.setAttribute('aria-expanded','true'); document.body.style.overflow='hidden'; if (lenis) lenis.stop();
+      if (G && !RM) gsap.from('.mmenu .ml',{y:30,opacity:0,stagger:.06,duration:.5,ease:'power3.out'});
+    } else sluitMenu();
+  });
+  mmenu.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', sluitMenu); });
+
+  var pre = document.getElementById('pre');
+  function heroIntro(){
+    if (!G || RM) return;
+    var tl = gsap.timeline({defaults:{ease:'power4.out'}});
+    tl.from('.line-in',{yPercent:118,duration:1.15,stagger:.1})
+      .from('[data-hero]',{y:26,opacity:0,duration:.9,stagger:.09,ease:'power3.out'},'-=.65')
+      .from('.hint',{opacity:0,duration:.8},'-=.4');
+  }
+  if (G && !RM && !sessionStorage.getItem('j1pre')){
+    sessionStorage.setItem('j1pre','1');
+    pre.style.display='flex';
+    gsap.set('.line-in',{yPercent:118});
+    gsap.set('[data-hero], .hint',{opacity:0});
+    var ptl = gsap.timeline({onComplete:function(){
+      pre.remove();
+      gsap.set('[data-hero], .hint',{clearProps:'opacity'});
+      gsap.set('.line-in',{clearProps:'transform'});
+      heroIntro();
+    }});
+    ptl.from('#preBrand',{y:16,opacity:0,duration:.55,ease:'power3.out'})
+       .to('#preLine',{scaleX:1,duration:.75,ease:'power2.inOut'},'-=.2')
+       .to(pre,{yPercent:-100,duration:.75,ease:'expo.inOut',delay:.12});
+  } else { pre.remove(); heroIntro(); }
+
+  /* Hero-canvas: heel subtiele, langzaam driftende zandtinten */
+  (function(){
+    if (RM) return;
+    var cv = document.getElementById('heroCanvas'); if(!cv) return;
+    var ctx = cv.getContext('2d'); if(!ctx) return;
+    var dpr = Math.min(window.devicePixelRatio||1, 1.5), W, H, actief = true, klein;
+    function maat(){
+      var r = cv.parentElement.getBoundingClientRect();
+      klein = r.width < 700;
+      W = cv.width = Math.round(r.width*dpr); H = cv.height = Math.round(r.height*dpr);
+    }
+    maat(); window.addEventListener('resize', maat);
+    var vormen = [
+      {x:.80,y:.24,r:.36,c:'209,190,150', a:.32, sx:.00019,sy:.00016,f1:1.0,f2:1.3},
+      {x:.14,y:.74,r:.30,c:'190,168,124',a:.22, sx:.00016,sy:.00021,f1:1.2,f2:0.9},
+      {x:.56,y:.88,r:.27,c:'226,212,180',a:.34, sx:.00023,sy:.00018,f1:0.8,f2:1.1},
+      {x:.34,y:.16,r:.20,c:'182,84,25', a:.06, sx:.00018,sy:.00020,f1:1.1,f2:1.0}
+    ];
+    function teken(ts){
+      if (!actief){ requestAnimationFrame(teken); return; }
+      var t = ts || 0;
+      ctx.clearRect(0,0,W,H);
+      var n = klein ? 3 : vormen.length;
+      for (var i=0;i<n;i++){
+        var v = vormen[i];
+        var x = (v.x + Math.sin(t*v.sx*v.f1 + i*2.1)*.06) * W;
+        var y = (v.y + Math.cos(t*v.sy*v.f2 + i*1.4)*.07) * H;
+        var r = v.r * (klein ? .85 : 1) * Math.min(W,H) * (1 + Math.sin(t*.00012 + i)*.08);
+        var g = ctx.createRadialGradient(x,y,0,x,y,r);
+        g.addColorStop(0,'rgba('+v.c+','+v.a+')');
+        g.addColorStop(1,'rgba('+v.c+',0)');
+        ctx.fillStyle = g;
+        ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2); ctx.fill();
+      }
+      requestAnimationFrame(teken);
+    }
+    requestAnimationFrame(teken);
+    if ('IntersectionObserver' in window){
+      new IntersectionObserver(function(e){ actief = e[0].isIntersecting; },{threshold:0}).observe(cv);
+    }
+    document.addEventListener('visibilitychange', function(){ actief = !document.hidden; });
+  })();
+
+  if (G && !RM && typeof ScrollTrigger !== 'undefined'){
+    gsap.utils.toArray('[data-rv]').forEach(function(el){
+      gsap.from(el,{y:40,opacity:0,duration:1,ease:'power3.out',immediateRender:false,scrollTrigger:{trigger:el,start:'top 90%'}});
+    });
+    gsap.utils.toArray('[data-rvg]').forEach(function(grp){
+      var items = grp.querySelectorAll('[data-rvi]');
+      gsap.from(items,{y:34,opacity:0,duration:.85,stagger:.1,ease:'power3.out',immediateRender:false,scrollTrigger:{trigger:grp,start:'top 88%'}});
+    });
+    gsap.utils.toArray('.statband [data-rvi]').forEach(function(el,i){
+      gsap.from(el,{y:34,opacity:0,duration:.9,delay:i*.12,ease:'power3.out',immediateRender:false,scrollTrigger:{trigger:'.statband',start:'top 82%'}});
+    });
+    document.querySelectorAll('.hl').forEach(function(el){
+      ScrollTrigger.create({trigger:el,start:'top 82%',onEnter:function(){ el.classList.add('on'); }});
+    });
+    gsap.from('.stap-rule i',{scaleX:0,duration:1.1,stagger:.18,ease:'power2.inOut',scrollTrigger:{trigger:'.stappen',start:'top 80%'}});
+    gsap.to('#portretIn',{yPercent:-9,ease:'none',scrollTrigger:{trigger:'.over',start:'top bottom',end:'bottom top',scrub:true}});
+    gsap.from('.ghost',{yPercent:36,opacity:0,duration:1,ease:'power2.out',immediateRender:false,scrollTrigger:{trigger:'footer',start:'top 82%'}});
+    gsap.utils.toArray('.skaart-in').forEach(function(el){
+      gsap.from(el,{y:44,opacity:0,duration:.9,ease:'power3.out',immediateRender:false,scrollTrigger:{trigger:el.parentElement,start:'top 88%'}});
+    });
+  }
+
+  if (G && !RM && FINE){
+    document.querySelectorAll('.magnet').forEach(function(btn){
+      var qx = gsap.quickTo(btn,'x',{duration:.45,ease:'power3'}),
+          qy = gsap.quickTo(btn,'y',{duration:.45,ease:'power3'});
+      btn.addEventListener('mousemove', function(e){
+        var r = btn.getBoundingClientRect();
+        qx((e.clientX - r.left - r.width/2)*.3);
+        qy((e.clientY - r.top - r.height/2)*.3);
+      });
+      btn.addEventListener('mouseleave', function(){ qx(0); qy(0); });
+    });
+    var cur = document.getElementById('cur');
+    var cx = gsap.quickTo(cur,'x',{duration:.18,ease:'power2'}),
+        cy = gsap.quickTo(cur,'y',{duration:.18,ease:'power2'});
+    var zichtbaarC = false;
+    window.addEventListener('mousemove', function(e){
+      if(!zichtbaarC){ gsap.to(cur,{opacity:1,duration:.3}); zichtbaarC = true; }
+      cx(e.clientX); cy(e.clientY);
+    });
+    document.addEventListener('mouseleave', function(){ gsap.to(cur,{opacity:0,duration:.3}); zichtbaarC = false; });
+    document.querySelectorAll('a, button, summary').forEach(function(el){
+      el.addEventListener('mouseenter', function(){ gsap.to(cur,{scale:2.4,opacity:.35,duration:.25}); });
+      el.addEventListener('mouseleave', function(){ gsap.to(cur,{scale:1,opacity:1,duration:.25}); });
+    });
+  }
+
+  /* ===== AI-demopaneel in de hero ===== */
+  (function(){
+    var stage = document.querySelector('.demo-stage'); if (!stage) return;
+    var scenes = stage.querySelectorAll('.scene'),
+        tabs = document.querySelectorAll('.demo-tab'),
+        typedEl = document.getElementById('typed0'),
+        typedTekst = 'Op basis van jullie aanvraag: 3 werkdagen, inclusief materiaal en 5 jaar garantie. Totaal: € 4.850,- excl. btw.',
+        idx = 0, timer = null, typeTimer = null, DUUR = 5600;
+
+    function zetTabs(i){
+      tabs.forEach(function(t, j){
+        t.classList.toggle('actief', j === i);
+        var bar = t.querySelector('i');
+        if (G && !RM && bar){
+          gsap.killTweensOf(bar);
+          gsap.set(bar, {scaleX: 0});
+          if (j === i) gsap.to(bar, {scaleX: 1, duration: DUUR/1000, ease: 'none'});
+        }
+      });
+    }
+    function typeEffect(el, tekst, ms){
+      if (!el) return;
+      clearInterval(typeTimer);
+      el.textContent = '';
+      var p = 0;
+      typeTimer = setInterval(function(){
+        el.textContent = tekst.slice(0, ++p);
+        if (p >= tekst.length) clearInterval(typeTimer);
+      }, ms);
+    }
+    function speelScene(i){
+      if (!G || RM) return;
+      var sc = scenes[i], badge = sc.querySelector('.badge');
+      if (badge) gsap.fromTo(badge, {opacity:0, y:8}, {opacity:1, y:0, delay: i===3 ? 1.5 : 3.2, duration:.4, ease:'power2.out'});
+      if (i === 0){
+        gsap.fromTo(sc.querySelectorAll('.doc-rij'), {scaleX:0}, {scaleX:1, duration:.5, stagger:.15, ease:'power2.out'});
+        typeEffect(typedEl, typedTekst, 24);
+      } else if (i === 1){
+        typeEffect(document.getElementById('typed1'), 'Wat hebben we klant Jansen beloofd over de levertijd?', 22);
+        gsap.fromTo(sc.querySelector('.brein-bron'), {opacity:0, y:8}, {opacity:1, y:0, delay:1.6, duration:.4, ease:'power2.out'});
+        gsap.fromTo(sc.querySelector('.brein-antw'), {opacity:0, y:8}, {opacity:1, y:0, delay:2.3, duration:.45, ease:'power2.out'});
+      } else if (i === 2){
+        var b = sc.querySelectorAll('.bub');
+        gsap.set(b, {opacity:0});
+        gsap.to(b[0], {opacity:1, duration:.4});
+        gsap.to(b[1], {opacity:1, delay:.8, duration:.3});
+        gsap.to(b[1], {opacity:0, delay:2.3, duration:.25});
+        gsap.fromTo(b[2], {opacity:0, y:10}, {opacity:1, y:0, delay:2.6, duration:.45, ease:'power2.out'});
+      } else if (i === 3){
+        gsap.fromTo(sc.querySelectorAll('.staaf'), {scaleY:0}, {scaleY:1, duration:.7, stagger:.12, ease:'power3.out'});
+      }
+    }
+    function ga(i){
+      idx = i;
+      scenes.forEach(function(s, j){ s.classList.toggle('aan', j === i); });
+      zetTabs(i);
+      speelScene(i);
+    }
+    function volgende(){ ga((idx + 1) % scenes.length); }
+    tabs.forEach(function(t){
+      t.addEventListener('click', function(){
+        clearInterval(timer);
+        ga(parseInt(t.getAttribute('data-scene'), 10));
+        if (G && !RM) timer = setInterval(function(){ if (zichtbaar) volgende(); }, DUUR);
+      });
+    });
+    if (!G || RM) return; // zonder animaties: scène 1 statisch zichtbaar, tabs blijven klikbaar
+    var zichtbaar = true;
+    if ('IntersectionObserver' in window){
+      new IntersectionObserver(function(e){ zichtbaar = e[0].isIntersecting; }, {threshold:.2}).observe(stage);
+    }
+    ga(0);
+    timer = setInterval(function(){ if (zichtbaar) volgende(); }, DUUR);
+  })();
+
+  /* ===== Tellende cijfers in de statsband ===== */
+  if (G && !RM && typeof ScrollTrigger !== 'undefined'){
+    gsap.utils.toArray('.cnt').forEach(function(el){
+      var doel = parseFloat(el.getAttribute('data-tel')),
+          suf = el.getAttribute('data-suffix') || '',
+          o = {n: 0};
+      gsap.to(o, {n: doel, duration: 1.6, ease: 'power2.out',
+        scrollTrigger: {trigger: el, start: 'top 85%'},
+        onUpdate: function(){ el.textContent = Math.round(o.n) + suf; }});
+    });
+    /* Dienstenkaarten: vorige kaart schaalt subtiel terug bij overlap */
+    var kaarten = gsap.utils.toArray('.skaart');
+    kaarten.forEach(function(k, i){
+      if (i === kaarten.length - 1) return;
+      gsap.to(k, {scale:.97, transformOrigin:'center top', ease:'none',
+        scrollTrigger:{trigger: kaarten[i+1], start:'top bottom', end:'top top+=160', scrub:true}});
+    });
+    /* Ghost-woordmerk drijft langzaam mee */
+    gsap.to('.ghost', {xPercent:-3, ease:'none', scrollTrigger:{trigger:'footer', start:'top bottom', end:'bottom bottom', scrub:true}});
+  }
+
+  /* ===== FAQ: zachte open-animatie ===== */
+  document.querySelectorAll('.faq-item').forEach(function(d){
+    d.addEventListener('toggle', function(){
+      if (d.open && G && !RM){
+        gsap.fromTo(d.querySelector('.fa'), {opacity:0, y:-8}, {opacity:1, y:0, duration:.35, ease:'power2.out'});
+      }
+    });
+  });
+
+  /* Posities herberekenen zodra fonts en layout definitief zijn */
+  window.addEventListener('load', function(){
+    if (G && typeof ScrollTrigger !== 'undefined') ScrollTrigger.refresh();
+  });
+
+  document.getElementById('nbForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var adres = document.getElementById('nbEmail').value;
+    document.getElementById('nbOk').classList.add('aan');
+    location.href = 'mailto:jarnowolting@gmail.com'
+      + '?subject=' + encodeURIComponent('Aanmelding nieuwsbrief Jar 1')
+      + '&body=' + encodeURIComponent('Meld dit e-mailadres aan voor de nieuwsbrief: ' + adres);
+  });
+})();
+</script>
+
+</body>
+</html>
